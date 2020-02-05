@@ -1,0 +1,26 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: logs.dj-kubelet.com
+spec:
+  scope: Cluster
+  group: dj-kubelet.com
+  versions:
+    - name: v1
+      served: true
+      storage: true
+  names:
+    plural: logs
+    singular: log
+    kind: Log
+
+  additionalPrinterColumns:
+    - name: Message
+      type: string
+      JSONPath: .status.message
+      priority: 0
+    - name: Extra Message
+      type: string
+      JSONPath: .status.extraMessage
+      priority: 1

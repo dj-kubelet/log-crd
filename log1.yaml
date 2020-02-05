@@ -1,0 +1,10 @@
+apiVersion: dj-kubelet.com/v1
+kind: Log
+metadata:
+  name: a
+status:
+  message: |2
+
+        Multi
+              line
+                   yaml
