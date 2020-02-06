@@ -14,7 +14,12 @@ kubectl apply -f ./log1.yaml
 $ kubectl get logs
 NAME   MESSAGE
 a
-    Multi
-          line
-               yaml
+____________________________
+| Try kubectl logs instead |
+----------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```

@@ -3,8 +3,13 @@ kind: Log
 metadata:
   name: a
 status:
-  message: |2
+  message: |
 
-        Multi
-              line
-                   yaml
+    ____________________________
+    | Try kubectl logs instead |
+    ----------------------------
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
