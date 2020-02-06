@@ -5,8 +5,8 @@ Add a cheerful message!
 
 ## Install
 ```bash
-kubectl apply -f ./log-crd.yaml
-kubectl apply -f ./log1.yaml
+kubectl apply -f https://raw.githubusercontent.com/dj-kubelet/log-crd/master/log-crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/dj-kubelet/log-crd/master/log1.yaml
 ```
 
 ## Usage
